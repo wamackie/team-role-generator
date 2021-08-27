@@ -29,3 +29,4 @@ const createTeam = () => inquirer.prompt([
     }
 ])
 
+createTeam()
