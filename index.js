@@ -33,25 +33,12 @@ const addTeamMember = () => inquirer.prompt([
     {
         type: "list",
         name: "role",
-        message: "What is the team member's role?",
-        choices: ["Engineer", "Intern"]
-    },
-    {
-        type: "input",
-        name: "name",
-        message: "What is the team member's name?"
-    },
-    {
-        type: "input",
-        name: "id",
-        message: "What is the team member's ID number?"
-    },
-    {
-        type: "input",
-        name: "email",
-        message: "What is the team member's email?"
+        message: "Add a team member?",
+        choices: ["Engineer", "Intern", "No"]
     }
 ])
+
+const add
 
 createTeam()
     .then(addTeamMember)
