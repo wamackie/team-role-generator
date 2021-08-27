@@ -34,7 +34,7 @@ const addTeamMember = () => inquirer.prompt([
         type: "list",
         name: "role",
         message: "What is the team member's role?",
-        choices: ["Employee", "Manager", "Engineer", "Manager"]
+        choices: ["Engineer", "Intern"]
     },
     {
         type: "input",
