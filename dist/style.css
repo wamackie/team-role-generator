@@ -1,9 +1,9 @@
 * {
-    background-color: #d9ebff;
+    background-color: #c2b2bf;
 }
 h1#hero {
     text-align: center;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599e4 100%);
+    background-image: linear-gradient(135deg, #9da1bd 0%, #bda49d 100%);
     color: white;
     padding: 40px;
     border-bottom: 4px solid white;
@@ -12,3 +12,4 @@ h1#hero {
 div.row {
     justify-content: center;
 }
+
