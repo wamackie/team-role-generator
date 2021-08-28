@@ -37,13 +37,51 @@ const addTeamMember = () => inquirer.prompt([
         choices: ["Engineer", "Intern", "No"]
     },
 ])
+
 .then(function(data) {
     switch(choices) {
-        case Engineer:
-          // code block
+        case (choices === "Engineer"):
+          inquirer.prompt([
+              {
+                  type: "input",
+                  name: "name",
+                  message: "What is the engineer's name?"
+              },
+              {
+                  type: "input",
+                  name: "id",
+                  message: "What is the engineer's ID number?"
+              },
+              {
+                  type: "input",
+                  name: "email",
+                  message: "What is the engineer's email?"
+              },
+              {
+                  type: "input",
+                  name: "github",
+                  message: "What is the engineer's Github?"
+              }
+          ])
           break;
-        case Intern:
-          // code block
+        case (choices === "Intern"):
+          inquirer.prompt([
+              {
+                  type: "input",
+                  name: "name",
+                  message: "What is the intern's name?"
+              },
+              {
+                  type: "input",
+                  name: "id",
+                  message: "What is the intern's ID number?"
+              },
+              {
+                  type: "input",
+                  name: "email",
+                  message: "What is the intern's email?"
+              }
+          ])
           break;
         default:
           // code block
