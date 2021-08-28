@@ -35,10 +35,21 @@ const addTeamMember = () => inquirer.prompt([
         name: "role",
         message: "Add a team member?",
         choices: ["Engineer", "Intern", "No"]
-    }
+    },
 ])
+.then(function(data) {
+    switch(choices) {
+        case Engineer:
+          // code block
+          break;
+        case Intern:
+          // code block
+          break;
+        default:
+          // code block
+      }
+})
 
-const add
 
 createTeam()
     .then(addTeamMember)
