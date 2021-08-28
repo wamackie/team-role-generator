@@ -80,6 +80,11 @@ const addTeamMember = () => inquirer.prompt([
                   type: "input",
                   name: "email",
                   message: "What is the intern's email?"
+              },
+              {
+                  type: "input",
+                  name: "school",
+                  message: "What is the intern's school?"
               }
           ])
           break;
