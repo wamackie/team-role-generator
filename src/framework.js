@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+function createManager () {
+    return ``
+}
+
+function createHTML() {
+`<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,17 +23,10 @@
     <main>
         <div class="container">
             <div class="row">
-                <div>
-                    Test
-                </div>
-                <div>
-                    Test
-                </div>
-                <div>
-                    Test
-                </div>
+                test
             </div>
         </div>
     </main>
 </body>
-</html>
+</html>`
+}
