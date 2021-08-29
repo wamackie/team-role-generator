@@ -1,6 +1,5 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const path = require("path");
 const Employee = require("./lib/Employee");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
@@ -72,7 +71,14 @@ const createTeamMember = () => {
                     message: "What is the engineer's Github?"
                 }
             ])
+            .then(data => {
+                const engineer = new Engineer(data.name, data.id, data.email, data.github);
+                team.push(engineer);
+                console.log(engineer);
+                createTeamMember();
+            })
             break;
+
         case "Intern":
             inquirer.prompt([
                 {
@@ -96,6 +102,12 @@ const createTeamMember = () => {
                     message: "What is the intern's school?"
                 }
             ])
+            .then(data => {
+                const intern = new Intern(data.name, data.id, data.email, data.school);
+                team.push(intern);
+                console.log(intern);
+                createTeamMember();
+            })
             break;
         default:
         }
