@@ -1,5 +1,47 @@
-function createManager () {
-    return ``
+const createManager = function (manager) {
+    return `
+<div class="col-5 member-card">
+    <div class="title">
+        <h4>${manager.name}</h4>
+        <h4>Manager</h4>
+    </div>
+    <div class="content">
+        <p class="data-values">ID: ${manager.id}</p>
+        <p class="data-values">Email: ${manager.email}</p>
+        <p class="data-values">Office Number: ${manager.officeNumber}</p>
+    </div>
+</div>`
+}
+
+const createEngineer = function (engineer) {
+    return `
+<div class="col-5 member-card">
+    <div class="title">
+        <h4>${engineer.name}</h4>
+        <h4>Engineer</h4>
+    </div>
+    <div class="content">
+        <p class="data-values">ID: ${engineer.id}<p>
+        <p class="data-values">Email: ${engineer.email}<p>
+        <p class="data-values">Github: ${engineer.github}<p>
+    </div>
+</div>`
+}
+
+const createIntern = function (intern) {
+    return `
+<div class="col-5 member-card">
+    <div class="title">
+        <h4>${intern.name}</h4>
+        <h4>Intern</h4>
+    </div>
+    <div class="content">
+        <p class="data-values">ID: ${intern.id}<p>
+        <p class="data-values">Email: ${intern.email}<p>
+        <p class="data-values">School: ${intern.school}<p>
+    </div>
+</div>
+`
 }
 
 function createHTML() {
@@ -22,11 +64,12 @@ function createHTML() {
     </hero>
     <main>
         <div class="container">
-            <div class="row">
-                test
+            <div class="row team-members">
+                <!-- Team Members -->
             </div>
         </div>
     </main>
-</body>
-</html>`
+</body>`
 }
+
+module.exports = framework;
