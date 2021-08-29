@@ -13,7 +13,7 @@ body {
 
 h1#heading {
     font-family: Munich;
-    font-size: 50px;
+    font-size: 60px;
     max-width: 600px;
     display: block;
     margin-top: 50px;
@@ -37,15 +37,25 @@ img#office-space {
 }
 
 div.row.team-members {
-    font-family: Munich;
-    max-width: 600px;
+    font-family: helvetica;
+    font-size: 20px;
+    max-width: 720px;
     height: auto;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    text-align: center;
+}
+
+div.col-5.member-card {
+    padding: 15px;
+    margin: 1px;
     background-color: #d0cdc6;
     border: 3px solid black;
 }
 
+p.data-values {
+    padding: 5px;
+    background-color: #d6d6d5f6;
+    border: .5px solid black;
+}
