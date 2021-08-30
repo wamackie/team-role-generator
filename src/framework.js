@@ -1,3 +1,6 @@
+const team = require("../index.js")
+console.log(team);
+
 const createManager = function (manager) {
     return `
 <div class="col-5 member-card">
