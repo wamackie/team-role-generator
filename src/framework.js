@@ -69,7 +69,6 @@ function createHTML() {
         <div class="container">
             <div class="row team-members">
                 <!-- Team Members -->
-                ${teamMembers}
             </div>
         </div>
     </main>
