@@ -1,5 +1,5 @@
-const team = require("../index.js")
-console.log(team);
+// const team = require("../index.js")
+//console.log(team);
 
 const createManager = function (manager) {
     return `
@@ -47,8 +47,24 @@ const createIntern = function (intern) {
 `
 }
 
-function createHTML() {
-`<!DOCTYPE html>
+function createArray(team) {
+  const cards = [];
+  for (let i = 0; i < team.length; i++){
+    if(team[i].getRole() === "Manager") {
+      cards.push(createManager(team[i]))
+    }
+    else if (team[i].getRole() === "Engineer") {
+      cards.push(createEngineer(team[i]))
+    }
+    else {
+      cards.push(createIntern(team[i]))
+    }
+  }
+  return cards;
+}
+
+function framework(team) {
+  return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -68,7 +84,7 @@ function createHTML() {
     <main>
         <div class="container">
             <div class="row team-members">
-                <!-- Team Members -->
+              ${createArray(team)}
             </div>
         </div>
     </main>

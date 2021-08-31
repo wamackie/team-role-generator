@@ -3,6 +3,7 @@ const inquirer = require("inquirer");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const framework = require("./src/framework")
 let team = [];
 
 const createManager = () => {
@@ -46,10 +47,11 @@ const createTeamMember = () => {
         },
     ])
     .then(data => {
-        if(data.employee === "Engineer") {
+        console.log(data);
+        if(data.role === "Engineer") {
             createEngineer();
         }
-        else if (data.employee === "Intern") {
+        else if (data.role === "Intern") {
             createIntern();
         } 
         else generateTeam();
@@ -119,7 +121,8 @@ const createIntern = () => {
 }
 
 const generateTeam = () => {
-    fs.writeFileSync ('./dist/index.html', team)
+    fs.writeFileSync ('./dist/index.html', framework(team), 'utf-8')
+    console.log('Team Profile Succesfully Created in the Dist Folder')
 }
 
 createManager()
