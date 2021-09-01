@@ -10,7 +10,7 @@ const createManager = function (manager) {
     </div>
     <div class="content">
         <p class="data-values">ID: ${manager.id}</p>
-        <p class="data-values">Email: ${manager.email}</p>
+        <p class="data-values">Email: <a href="mailto:${manager.email}">${manager.email}</a><p>
         <p class="data-values">Office Number: ${manager.officeNumber}</p>
     </div>
 </div>`
@@ -25,8 +25,8 @@ const createEngineer = function (engineer) {
     </div>
     <div class="content">
         <p class="data-values">ID: ${engineer.id}<p>
-        <p class="data-values">Email: ${engineer.email}<p>
-        <p class="data-values">Github: ${engineer.github}<p>
+        <p class="data-values">Email: <a href="mailto:${engineer.email}">${engineer.email}</a><p>
+        <p class="data-values">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a><p>
     </div>
 </div>`
 }
@@ -40,7 +40,7 @@ const createIntern = function (intern) {
     </div>
     <div class="content">
         <p class="data-values">ID: ${intern.id}<p>
-        <p class="data-values">Email: ${intern.email}<p>
+        <p class="data-values">Email: <a href="mailto:${intern.email}">${intern.email}</a><p>
         <p class="data-values">School: ${intern.school}<p>
     </div>
 </div>
