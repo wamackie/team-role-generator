@@ -19,7 +19,7 @@ To install:<br>
 npm install
     
 ## Usage:
-Install dependencies before use. While in the root folder, use the console to enter "node index" to begin answering a list of questions. An HTML displaying team member information will be created upon completion.
+Install dependencies before use. While in the root folder, use the console and enter "node index" to begin.
     
 ## License:
 This application uses the MIT license.
